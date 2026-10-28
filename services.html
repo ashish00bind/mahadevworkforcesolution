@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F5F3EE">
+  <title>Industrial Manpower Services & Solutions | Mahadev Work Force Solution</title>
+  <meta name="description" content="Explore our full suite of contract labour, technical staff, housekeeping, statutory compliance, payroll, and on-site supervision services.">
+  <meta property="og:title" content="Industrial Manpower Services & Solutions | Mahadev Work Force Solution">
+  <meta property="og:description" content="Comprehensive workforce solutions for manufacturing plants, assembly lines, chemical hubs, and logistics warehouses.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Anti-FOUC Theme Script -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('mws_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = (saved === 'dark' || saved === 'light') ? saved : (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+        if (theme === 'dark') document.documentElement.classList.add('dark');
+        else document.documentElement.classList.remove('dark');
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Floating Pill Navbar -->
+  <header class="navbar-wrapper">
+    <div class="navbar-pill glass-pill">
+      <!-- Brand Logo & Wordmark -->
+      <a href="index.html" class="navbar-brand" aria-label="Mahadev Work Force Solution Homepage">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Mahadev</span>
+          <span class="brand-subtitle">Work Force Solution</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="navbar-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="industries.html" class="nav-link">Industries</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Actions: Theme Toggle & Quote CTA -->
+      <div class="navbar-actions">
+        <!-- Theme Toggle Button -->
+        <button type="button" class="theme-toggle-btn" data-action="toggle-theme" aria-label="Toggle theme">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+          </svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+          </svg>
+        </button>
+
+        <!-- Desktop CTA Button -->
+        <a href="contact.html" class="btn-primary-pill">
+          <span>Get Quote</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button type="button" class="mobile-menu-toggle" id="mobile-menu-btn" aria-expanded="false" aria-label="Toggle navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-content">
+      <div class="drawer-header">
+        <span class="drawer-title">Menu Navigation</span>
+        <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Close menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="drawer-nav" aria-label="Mobile links">
+        <a href="index.html" class="drawer-nav-link"><span>Home</span></a>
+        <a href="services.html" class="drawer-nav-link active">
+          <span>Services</span>
+          <div class="active-dot"></div>
+        </a>
+        <a href="industries.html" class="drawer-nav-link"><span>Industries</span></a>
+        <a href="about.html" class="drawer-nav-link"><span>About Us</span></a>
+        <a href="contact.html" class="drawer-nav-link"><span>Contact & Quote</span></a>
+      </nav>
+
+      <div class="drawer-footer">
+        <a href="contact.html" class="drawer-cta-btn">
+          <span>Request a Manpower Quote</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- 1. HERO BANNER -->
+    <section class="hero-section">
+      <div class="container-max">
+        <div class="hero-box">
+          <div class="hero-bg-wrapper">
+            <img src="assets/images/services-skilled.jpg" alt="Skilled industrial workforce and plant machine operators" class="hero-bg-img" fetchpriority="high">
+            <div class="hero-overlay"></div>
+          </div>
+
+          <div class="hero-content">
+            <div class="eyebrow-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+              <span>INDUSTRIAL WORKFORCE SOLUTIONS</span>
+            </div>
+
+            <h1 class="hero-title">
+              Industrial Manpower & <br>
+              <span class="highlight">Support Services</span>
+            </h1>
+
+            <p class="hero-desc">
+              Comprehensive manpower contracting and plant support: contract labour, certified technical staffing, industrial housekeeping, statutory payroll compliance, and dedicated on-site supervision for uninterrupted operations.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="contact.html" class="btn-hero-primary">
+                <span>Request a Quote</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+
+              <a href="#services-grid" class="btn-hero-secondary">
+                <span>Explore Services</span>
+              </a>
+            </div>
+
+            <div class="hero-pillars">
+              <div class="hero-pillar-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                <span>Vetted & Certified Operators</span>
+              </div>
+              <div class="hero-pillar-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                <span>Full Shift Roster Coverage</span>
+              </div>
+              <div class="hero-pillar-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                <span>Statutory & Safety Compliant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SERVICE CATALOGUE -->
+    <section id="services-grid" class="section-py">
+      <div class="container-max">
+        <div class="grid-3">
+          <!-- Service 1: Contract Manpower Supply -->
+          <article id="contract-manpower" class="glass-card service-article-card">
+            <div>
+              <div class="service-card-header">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                </div>
+                <span class="service-badge">Flexible Workforce</span>
+              </div>
+
+              <h2 class="competence-title" style="font-size: 1.25rem;">Contract Manpower Supply</h2>
+              <p class="competence-desc" style="margin-bottom: 1.25rem;">
+                Reliable semi-skilled and unskilled labour deployed on contract to manage production cycles, peak dispatch seasons, and routine factory workflows.
+              </p>
+
+              <div style="margin-bottom: 1rem;">
+                <h3 style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.05em;">Common Applications:</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.375rem; font-size: 0.75rem; color: var(--text-secondary);">
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Assembly line workers & packing operators</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Loading, unloading & staging personnel</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Material handling & internal logistics support</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>General plant utility & helper staff</span></li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.05em;">Key Advantages:</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.375rem; font-size: 0.75rem; color: var(--text-muted);">
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Rapid turnaround for shift scaling</span></li>
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Complete muster roll and attendance tracking</span></li>
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Replacement buffer for unforeseen absentees</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="competence-footer">
+              <a href="contact.html?service=Contract+Manpower+Supply#quote-form" class="link-arrow" style="justify-content: space-between; width: 100%;">
+                <span>Request Quote for this Service</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 2: Skilled & Technical Staff -->
+          <article id="technical-staff" class="glass-card service-article-card">
+            <div>
+              <div class="service-card-header">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                  </svg>
+                </div>
+                <span class="service-badge">Precision Operations</span>
+              </div>
+
+              <h2 class="competence-title" style="font-size: 1.25rem;">Skilled & Technical Staff</h2>
+              <p class="competence-desc" style="margin-bottom: 1.25rem;">
+                Certified and trade-tested operators capable of running machinery, maintaining auxiliary systems, and adhering to strict engineering tolerances.
+              </p>
+
+              <div style="margin-bottom: 1rem;">
+                <h3 style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.05em;">Common Applications:</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.375rem; font-size: 0.75rem; color: var(--text-secondary);">
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>CNC machine operators & lathe mechanics</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Certified welders, fitters & fabricators</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Industrial electricians & maintenance technicians</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Warehouse forklift operators with license validation</span></li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.05em;">Key Advantages:</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.375rem; font-size: 0.75rem; color: var(--text-muted);">
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Rigorous technical vetting & credential checks</span></li>
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Safety orientation adhering to OSHA / factory guidelines</span></li>
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Sustained performance with regular reviews</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="competence-footer">
+              <a href="contact.html?service=Skilled+%26+Technical+Staff#quote-form" class="link-arrow" style="justify-content: space-between; width: 100%;">
+                <span>Request Quote for this Service</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 3: Industrial Housekeeping -->
+          <article id="housekeeping" class="glass-card service-article-card">
+            <div>
+              <div class="service-card-header">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                  </svg>
+                </div>
+                <span class="service-badge">Facility Hygiene</span>
+              </div>
+
+              <h2 class="competence-title" style="font-size: 1.25rem;">Industrial Housekeeping</h2>
+              <p class="competence-desc" style="margin-bottom: 1.25rem;">
+                Systematic cleaning and sanitation protocols engineered specifically for industrial plant floors, hazardous zones, corporate offices, and cleanrooms.
+              </p>
+
+              <div style="margin-bottom: 1rem;">
+                <h3 style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.05em;">Common Applications:</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.375rem; font-size: 0.75rem; color: var(--text-secondary);">
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Shopfloor waste removal & oil spillage management</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>High-bay dust removal & overhead cleaning</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Office, cafeteria & sanitation facility upkeep</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Scheduled pre-audit deep sanitization</span></li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.05em;">Key Advantages:</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.375rem; font-size: 0.75rem; color: var(--text-muted);">
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Trained in industrial cleaning chemicals & gear</span></li>
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Dedicated housekeeping supervision & daily checklists</span></li>
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Compliance with factory hygiene and EHS standards</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="competence-footer">
+              <a href="contact.html?service=Industrial+Housekeeping#quote-form" class="link-arrow" style="justify-content: space-between; width: 100%;">
+                <span>Request Quote for this Service</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 4: Labour & Statutory Compliance -->
+          <article id="compliance" class="glass-card service-article-card">
+            <div>
+              <div class="service-card-header">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="m9 15 2 2 4-4"/>
+                  </svg>
+                </div>
+                <span class="service-badge">Legal Assurance</span>
+              </div>
+
+              <h2 class="competence-title" style="font-size: 1.25rem;">Labour & Statutory Compliance</h2>
+              <p class="competence-desc" style="margin-bottom: 1.25rem;">
+                Complete management of statutory labour compliances, protecting your enterprise from legal risks, labor officer inspections, and statutory defaults.
+              </p>
+
+              <div style="margin-bottom: 1rem;">
+                <h3 style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.05em;">Common Applications:</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.375rem; font-size: 0.75rem; color: var(--text-secondary);">
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Provident Fund (PF) and ESIC remittances & returns</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Statutory registers (Muster Roll, Overtime, Wages)</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Labour license procurement & periodic renewals</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Assistance during labour commissioner inspections</span></li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.05em;">Key Advantages:</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.375rem; font-size: 0.75rem; color: var(--text-muted);">
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>100% transparency in challans & credit statements</span></li>
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Monthly compliance dossiers provided with invoices</span></li>
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Zero liability on principal employer for statutory gaps</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="competence-footer">
+              <a href="contact.html?service=Labour+%26+Statutory+Compliance#quote-form" class="link-arrow" style="justify-content: space-between; width: 100%;">
+                <span>Request Quote for this Service</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 5: Payroll Outsourcing -->
+          <article id="payroll" class="glass-card service-article-card">
+            <div>
+              <div class="service-card-header">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/>
+                  </svg>
+                </div>
+                <span class="service-badge">Administrative Relief</span>
+              </div>
+
+              <h2 class="competence-title" style="font-size: 1.25rem;">Payroll Outsourcing</h2>
+              <p class="competence-desc" style="margin-bottom: 1.25rem;">
+                End-to-end payroll processing for contract workers, including biometric attendance reconciliation, deductions, payslip generation, and direct bank transfers.
+              </p>
+
+              <div style="margin-bottom: 1rem;">
+                <h3 style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.05em;">Common Applications:</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.375rem; font-size: 0.75rem; color: var(--text-secondary);">
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Third-party contract employee payroll</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Multi-shift attendance & overtime reconciliation</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Timely direct salary disbursement via NEFT/IMPS</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Bonus, gratuity & annual settlement computation</span></li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.05em;">Key Advantages:</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.375rem; font-size: 0.75rem; color: var(--text-muted);">
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Error-free calculation adhering to state minimum wages</span></li>
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Automated digital pay-slips and SMS alerts</span></li>
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Confidential and audit-ready accounting</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="competence-footer">
+              <a href="contact.html?service=Payroll+Outsourcing#quote-form" class="link-arrow" style="justify-content: space-between; width: 100%;">
+                <span>Request Quote for this Service</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 6: On-Site Supervision -->
+          <article id="supervision" class="glass-card service-article-card">
+            <div>
+              <div class="service-card-header">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/>
+                  </svg>
+                </div>
+                <span class="service-badge">Operational Control</span>
+              </div>
+
+              <h2 class="competence-title" style="font-size: 1.25rem;">On-Site Supervision</h2>
+              <p class="competence-desc" style="margin-bottom: 1.25rem;">
+                Dedicated field supervisors stationed right at your plant gate to manage daily muster roll entries, safety protocols, worker discipline, and plant coordination.
+              </p>
+
+              <div style="margin-bottom: 1rem;">
+                <h3 style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.05em;">Common Applications:</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.375rem; font-size: 0.75rem; color: var(--text-secondary);">
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Daily shift allocation & headcount balancing</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Gate entry coordination & mandatory PPE checks</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Conflict resolution & discipline on shopfloor</span></li>
+                  <li style="display: flex; align-items: start; gap: 0.5rem;"><span style="width: 5px; height: 5px; border-radius: 9999px; background-color: var(--amber-500); margin-top: 0.375rem; flex-shrink: 0;"></span><span>Liaison between factory management & workers</span></li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.05em;">Key Advantages:</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.375rem; font-size: 0.75rem; color: var(--text-muted);">
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Single point of contact for plant heads and HR</span></li>
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Real-time escalation and replacement dispatch</span></li>
+                  <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Daily reporting on attendance and task completions</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="competence-footer">
+              <a href="contact.html?service=On-Site+Supervision#quote-form" class="link-arrow" style="justify-content: space-between; width: 100%;">
+                <span>Request Quote for this Service</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. DEPLOYMENT PROCESS -->
+    <section class="section-py section-border-y bg-elevated">
+      <div class="container-max">
+        <div class="section-heading">
+          <div class="section-eyebrow">
+            <span>Workflow Methodology</span>
+          </div>
+          <h2 class="section-title">Our 4-Stage Deployment Process</h2>
+          <p class="section-desc">How we intake your facility requirements and mobilize productive, compliant teams without operational delays.</p>
+        </div>
+
+        <div class="grid-4" style="margin-top: 3rem;">
+          <!-- Step 01 -->
+          <div class="glass-card deployment-card">
+            <div>
+              <div class="deployment-header">
+                <span class="deployment-number">01</span>
+                <div class="deployment-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M15 2H9a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1Z"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="competence-title" style="font-size: 1rem; margin-bottom: 0.5rem;">Requirement Assessment</h3>
+              <p class="competence-desc" style="font-size: 0.8125rem;">
+                We consult with your plant or HR team to understand headcount, shift hours, specific job descriptions, skill levels, and statutory expectations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="glass-card deployment-card">
+            <div>
+              <div class="deployment-header">
+                <span class="deployment-number">02</span>
+                <div class="deployment-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="competence-title" style="font-size: 1rem; margin-bottom: 0.5rem;">Sourcing & Role Matching</h3>
+              <p class="competence-desc" style="font-size: 0.8125rem;">
+                Our recruitment network sources candidates matching trade specifications, experience criteria, and proximity to your facility.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="glass-card deployment-card">
+            <div>
+              <div class="deployment-header">
+                <span class="deployment-number">03</span>
+                <div class="deployment-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><circle cx="10" cy="13" r="2"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="competence-title" style="font-size: 1rem; margin-bottom: 0.5rem;">Screening & Document Checks</h3>
+              <p class="competence-desc" style="font-size: 0.8125rem;">
+                Every candidate undergoes KYC verification, police record checks, statutory document collection (Aadhaar, Bank, PF UAN), and health verification.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="glass-card deployment-card">
+            <div>
+              <div class="deployment-header">
+                <span class="deployment-number">04</span>
+                <div class="deployment-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18.5" r="2.5"/><circle cx="7" cy="18.5" r="2.5"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="competence-title" style="font-size: 1rem; margin-bottom: 0.5rem;">Deployment & Onboarding</h3>
+              <p class="competence-desc" style="font-size: 0.8125rem;">
+                Workers are deployed on-site with complete PPE kits, briefed on plant rules and safety instructions under the guidance of our supervisor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CLOSING CTA -->
+    <section class="section-py">
+      <div class="container-narrow" style="text-align: center;">
+        <div class="section-eyebrow">
+          <span>Custom Manpower Solutions</span>
+        </div>
+        <h2 class="section-title">Need a Customized Manpower Proposal or Rate Card?</h2>
+        <p class="section-desc" style="max-width: 40rem; margin-left: auto; margin-right: auto; margin-bottom: 2rem;">
+          Contact our contracting desk with your expected headcounts, job roles, and shift timings for a prompt rate card and compliance breakdown.
+        </p>
+
+        <a href="contact.html" class="btn-hero-primary">
+          <span>Get Manpower Rate Card</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" aria-label="Site Footer">
+    <div class="container-max footer-content">
+      <div class="footer-grid">
+        <!-- 1. Company Information -->
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <a href="index.html" class="navbar-brand" style="margin-bottom: 0.5rem;" aria-label="Mahadev Work Force Solution Homepage">
+            <div class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title" style="font-size: 1rem;">Mahadev Work Force Solution</span>
+              <span class="brand-subtitle">Industrial Manpower & Contracting</span>
+            </div>
+          </a>
+
+          <p style="font-size: 0.875rem; line-height: 1.6; max-width: 24rem; color: var(--text-secondary);">
+            Supplying dependable, verified, and safety-compliant workforce solutions to manufacturing plants, chemical units, logistics hubs, and infrastructure operations.
+          </p>
+
+          <div style="padding-top: 0.5rem; font-size: 0.75rem; border-top: 1px solid var(--border-subtle);">
+            <span style="display: inline-flex; align-items: center; gap: 0.375rem; font-weight: 600; color: #10B981;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+              <span>Statutory Compliance & Safety First Policy</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- 2. Quick Links -->
+        <div>
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="industries.html" class="footer-link">Industries</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Quote</a></li>
+          </ul>
+        </div>
+
+        <!-- 3. Workforce Services -->
+        <div>
+          <h3 class="footer-heading">Workforce Services</h3>
+          <ul class="footer-list">
+            <li><a href="services.html#contract-manpower" class="footer-link">Contract Manpower</a></li>
+            <li><a href="services.html#technical-staff" class="footer-link">Skilled & Technical</a></li>
+            <li><a href="services.html#housekeeping" class="footer-link">Industrial Housekeeping</a></li>
+            <li><a href="services.html#compliance" class="footer-link">Compliance & Payroll</a></li>
+            <li><a href="services.html#payroll" class="footer-link">Payroll Outsourcing</a></li>
+            <li><a href="services.html#supervision" class="footer-link">On-Site Supervision</a></li>
+          </ul>
+        </div>
+
+        <!-- 4. Contact Us -->
+        <div>
+          <h3 class="footer-heading">Contact Us</h3>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <a href="https://www.google.com/maps/search/?api=1&query=Shop%20No.%20FF-01%2C%20Dhanlaxmi%20Enterprise%2C%20Asian%20Paints%20Chowkdi%2C%20Plot%20No.%202603%2C%2012%263%2C%20Ankleshwar%20GIDC%2C%20Ankleshwar%2C%20Gujarat%20393002" target="_blank" rel="noopener noreferrer" class="footer-link" style="line-height: 1.5;">
+                Shop No. FF-01, Dhanlaxmi Enterprise, Asian Paints Chowkdi, Plot No. 2603, 12&3, Ankleshwar GIDC, Ankleshwar, Gujarat 393002
+              </a>
+            </li>
+
+            <li class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+                <a href="tel:+918160841776" class="footer-link">
+                  <strong>+91 816 084 1776</strong> <span style="font-size: 0.6875rem; color: var(--text-muted);">(Primary)</span>
+                </a>
+                <a href="tel:+919429126676" class="footer-link">
+                  <strong>+91 94291 26676</strong> <span style="font-size: 0.6875rem; color: var(--text-muted);">(Secondary)</span>
+                </a>
+              </div>
+            </li>
+
+            <li class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              <a href="mailto:mahadevworkforcesolution@gmail.com" class="footer-link" style="word-break: break-all;">
+                mahadevworkforcesolution@gmail.com
+              </a>
+            </li>
+
+            <li class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <span>Hours: <strong style="color: var(--text-primary);">9AM to 6PM</strong></span>
+            </li>
+
+            <li style="padding-top: 0.375rem;">
+              <a href="https://wa.me/918160841776?text=Hello%20Mahadev%20Work%20Force%20Solution%2C%20I%20would%20like%20to%20enquire%20about%20your%20industrial%20manpower%20services." target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.375rem 0.875rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; background-color: rgba(16, 185, 129, 0.1); color: #059669; border: 1px solid rgba(16, 185, 129, 0.25);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+                <span>Enquire on WhatsApp</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p>© <span id="current-year">2026</span> Mahadev Work Force Solution. All rights reserved.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+          <a href="services.html#compliance" class="footer-link">Statutory Compliance</a>
+          <a href="contact.html?service=Contract+Manpower+Supply#quote-form" class="footer-link" style="color: var(--amber-500); font-weight: 600;">Request Rate Card →</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <aside class="floating-whatsapp" aria-label="Quick Communication">
+    <a href="https://wa.me/918160841776?text=Hello%20Mahadev%20Work%20Force%20Solution%2C%20I%20would%20like%20to%20enquire%20about%20your%20industrial%20manpower%20services." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Enquire on WhatsApp (opens in a new tab)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+      <span class="whatsapp-tooltip">Enquire on WhatsApp</span>
+    </a>
+  </aside>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

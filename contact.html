@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F5F3EE">
+  <title>Contact & Request a Quote — Mahadev Work Force Solution</title>
+  <meta name="description" content="Get in touch with Mahadev Work Force Solution for industrial manpower supply, contract labour quotes, and compliance consultation in Ankleshwar, Gujarat.">
+  <meta property="og:title" content="Contact & Request a Quote | Mahadev Work Force Solution">
+  <meta property="og:description" content="Connect directly with our industrial contracting desk for staffing schedules, plant coverage, and transparent manpower rate quotations.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Anti-FOUC Theme Script -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('mws_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = (saved === 'dark' || saved === 'light') ? saved : (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+        if (theme === 'dark') document.documentElement.classList.add('dark');
+        else document.documentElement.classList.remove('dark');
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Floating Pill Navbar -->
+  <header class="navbar-wrapper">
+    <div class="navbar-pill glass-pill">
+      <!-- Brand Logo & Wordmark -->
+      <a href="index.html" class="navbar-brand" aria-label="Mahadev Work Force Solution Homepage">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Mahadev</span>
+          <span class="brand-subtitle">Work Force Solution</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="navbar-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="industries.html" class="nav-link">Industries</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <!-- Right Actions: Theme Toggle & Quote CTA -->
+      <div class="navbar-actions">
+        <!-- Theme Toggle Button -->
+        <button type="button" class="theme-toggle-btn" data-action="toggle-theme" aria-label="Toggle theme">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+          </svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+          </svg>
+        </button>
+
+        <!-- Desktop CTA Button -->
+        <a href="contact.html#quote-form" class="btn-primary-pill">
+          <span>Get Quote</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button type="button" class="mobile-menu-toggle" id="mobile-menu-btn" aria-expanded="false" aria-label="Toggle navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-content">
+      <div class="drawer-header">
+        <span class="drawer-title">Menu Navigation</span>
+        <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Close menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="drawer-nav" aria-label="Mobile links">
+        <a href="index.html" class="drawer-nav-link"><span>Home</span></a>
+        <a href="services.html" class="drawer-nav-link"><span>Services</span></a>
+        <a href="industries.html" class="drawer-nav-link"><span>Industries</span></a>
+        <a href="about.html" class="drawer-nav-link"><span>About Us</span></a>
+        <a href="contact.html" class="drawer-nav-link active">
+          <span>Contact & Quote</span>
+          <div class="active-dot"></div>
+        </a>
+      </nav>
+
+      <div class="drawer-footer">
+        <a href="contact.html#quote-form" class="drawer-cta-btn">
+          <span>Request a Manpower Quote</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- 1. HERO BANNER -->
+    <section class="hero-section">
+      <div class="container-max">
+        <div class="hero-box">
+          <div class="hero-bg-wrapper">
+            <img src="assets/images/hero-industrial.jpg" alt="Industrial operations desk and workforce coordination" class="hero-bg-img" fetchpriority="high">
+            <div class="hero-overlay"></div>
+          </div>
+
+          <div class="hero-content">
+            <div class="eyebrow-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+              <span>LET'S DISCUSS YOUR REQUIREMENTS</span>
+            </div>
+
+            <h1 class="hero-title">
+              Let's Build a Reliable <br>
+              <span class="highlight">Workforce Together</span>
+            </h1>
+
+            <p class="hero-desc">
+              Connect directly with our industrial contracting desk to discuss staffing schedules, technical qualifications, plant coverage, and transparent manpower rate quotations.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#quote-form" class="btn-hero-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                <span>Request a Quote</span>
+              </a>
+
+              <a href="tel:+918160841776" class="btn-hero-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>Call Us</span>
+              </a>
+            </div>
+
+            <div class="hero-pillars">
+              <div class="hero-pillar-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                <span>Rapid Quote Turnaround</span>
+              </div>
+              <div class="hero-pillar-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                <span>On-Site Plant Surveys</span>
+              </div>
+              <div class="hero-pillar-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                <span>Transparent Sourcing Terms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CONTACT DETAILS & QUOTE FORM -->
+    <section class="section-py">
+      <div class="container-max">
+        <div class="split-5-7">
+          <!-- Left Column: Contact Cards -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div>
+              <h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">
+                Head Office & Inquiries
+              </h2>
+              <p style="font-size: 0.875rem; line-height: 1.6; color: var(--text-secondary);">
+                Reach out directly during working hours or send a structured requirement. We provide prompt rate estimates and workforce availability assessments.
+              </p>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <!-- Phone Card -->
+              <div class="glass-card" style="padding: 1.25rem; display: flex; align-items: start; gap: 1rem;">
+                <div style="width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; background-color: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.2); display: flex; align-items: center; justify-content: center; color: var(--amber-500); flex-shrink: 0;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div style="flex: 1; min-width: 0;">
+                  <h3 style="font-size: 0.6875rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em; color: var(--text-muted);">Telephone / Mobile</h3>
+                  <div style="display: flex; flex-direction: column; gap: 0.375rem; margin-top: 0.25rem;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                      <a href="tel:+918160841776" style="font-size: 0.875rem; font-weight: 600; color: var(--text-primary);">+91 816 084 1776</a>
+                      <span style="font-size: 0.625rem; font-weight: 600; padding: 0.125rem 0.5rem; border-radius: 9999px; background-color: rgba(245, 158, 11, 0.15); color: var(--amber-500); border: 1px solid rgba(245, 158, 11, 0.3);">Primary</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                      <a href="tel:+919429126676" style="font-size: 0.875rem; font-weight: 600; color: var(--text-primary);">+91 94291 26676</a>
+                      <span style="font-size: 0.625rem; font-weight: 600; padding: 0.125rem 0.5rem; border-radius: 9999px; background-color: rgba(100, 116, 139, 0.1); color: var(--text-secondary); border: 1px solid var(--border-subtle);">Secondary</span>
+                    </div>
+                  </div>
+                  <span style="font-size: 0.75rem; color: var(--text-muted); display: block; margin-top: 0.375rem;">Direct lines for plant managers & HR heads</span>
+                </div>
+              </div>
+
+              <!-- Email Card -->
+              <div class="glass-card" style="padding: 1.25rem; display: flex; align-items: start; gap: 1rem;">
+                <div style="width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; background-color: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.2); display: flex; align-items: center; justify-content: center; color: var(--amber-500); flex-shrink: 0;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div style="flex: 1; min-width: 0;">
+                  <h3 style="font-size: 0.6875rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em; color: var(--text-muted);">Official Email</h3>
+                  <a href="mailto:mahadevworkforcesolution@gmail.com" style="font-size: 0.875rem; font-weight: 600; color: var(--text-primary); margin-top: 0.25rem; display: inline-block; word-break: break-all;">mahadevworkforcesolution@gmail.com</a>
+                  <span style="font-size: 0.75rem; color: var(--text-muted); display: block; margin-top: 0.25rem;">Submit tender documents & formal RFPs</span>
+                </div>
+              </div>
+
+              <!-- Address Card -->
+              <div class="glass-card" style="padding: 1.25rem; display: flex; align-items: start; gap: 1rem;">
+                <div style="width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; background-color: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.2); display: flex; align-items: center; justify-content: center; color: var(--amber-500); flex-shrink: 0; margin-top: 0.125rem;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div style="flex: 1; min-width: 0;">
+                  <h3 style="font-size: 0.6875rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em; color: var(--text-muted);">Registered Office</h3>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Shop%20No.%20FF-01%2C%20Dhanlaxmi%20Enterprise%2C%20Asian%20Paints%20Chowkdi%2C%20Plot%20No.%202603%2C%2012%263%2C%20Ankleshwar%20GIDC%2C%20Ankleshwar%2C%20Gujarat%20393002" target="_blank" rel="noopener noreferrer" style="font-size: 0.8125rem; font-weight: 500; color: var(--text-primary); line-height: 1.5; margin-top: 0.25rem; display: block;">
+                    Shop No. FF-01, Dhanlaxmi Enterprise, Asian Paints Chowkdi, Plot No. 2603, 12&3, Ankleshwar GIDC, Ankleshwar, Gujarat 393002
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-left: 0.25rem;"><line x1="7" x2="17" y1="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                  </a>
+                  <span style="font-size: 0.75rem; color: var(--text-muted); display: block; margin-top: 0.375rem;">Operational hub for labour dispatch & coordination</span>
+                </div>
+              </div>
+
+              <!-- Working Hours Card -->
+              <div class="glass-card" style="padding: 1.25rem; display: flex; align-items: start; gap: 1rem;">
+                <div style="width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; background-color: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.2); display: flex; align-items: center; justify-content: center; color: var(--amber-500); flex-shrink: 0;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <h3 style="font-size: 0.6875rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em; color: var(--text-muted);">Operating Schedule</h3>
+                  <p style="font-size: 0.875rem; font-weight: 700; color: var(--text-primary); margin-top: 0.25rem;">9AM to 6PM</p>
+                  <span style="font-size: 0.75rem; color: var(--text-muted); display: block; margin-top: 0.25rem;">24/7 on-call supervisor support for active plant shifts</span>
+                </div>
+              </div>
+
+              <!-- WhatsApp Enquiry Card -->
+              <div class="glass-card" style="padding: 1.25rem; display: flex; align-items: start; gap: 1rem; border-color: rgba(16, 185, 129, 0.25); background-color: rgba(16, 185, 129, 0.03);">
+                <div style="width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; background-color: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); display: flex; align-items: center; justify-content: center; color: #10B981; flex-shrink: 0;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <div style="flex: 1; min-width: 0;">
+                  <h3 style="font-size: 0.6875rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em; color: #10B981;">WhatsApp Quick Chat</h3>
+                  <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">Chat directly with our workforce manager for urgent shift replacements.</p>
+                  <a href="https://wa.me/918160841776?text=Hello%20Mahadev%20Work%20Force%20Solution%2C%20I%20would%20like%20to%20discuss%20our%20industrial%20manpower%20requirements." target="_blank" rel="noopener noreferrer" class="link-arrow" style="color: #059669; margin-top: 0.5rem;">
+                    <span>Start WhatsApp Conversation</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" x2="17" y1="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Verified Partner Note -->
+            <div style="padding: 1.25rem; border-radius: 1rem; background-color: var(--bg-elevated); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 0.5rem;">
+              <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #10B981;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                <span>Verified Contracting Partner</span>
+              </div>
+              <p style="font-size: 0.75rem; line-height: 1.6; color: var(--text-secondary);">
+                All contracts comply with State Minimum Wage notifications, EPF, and ESIC provisions. Official registration certificates are made available during client onboarding audits.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Quote Form -->
+          <div id="quote-form" style="scroll-margin-top: 7rem;">
+            <div class="glass-card" style="padding: 2rem; border-radius: 1.5rem;">
+              <div style="margin-bottom: 1.5rem;">
+                <h3 style="font-size: 1.375rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.375rem;">
+                  Request a Manpower Quotation
+                </h3>
+                <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5;">
+                  Submit your plant requirement, workforce headcount, or shift details. All fields marked with <span style="color: var(--amber-500); font-weight: 700;">*</span> are required.
+                </p>
+              </div>
+
+              <!-- Success Notification Box (Appears after submission) -->
+              <div id="status-success-box" class="status-box status-box-success" role="status">
+                <div style="display: flex; align-items: start; gap: 0.75rem; margin-bottom: 1rem;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 0.125rem;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  <div>
+                    <strong style="font-size: 0.9375rem; display: block; color: #059669; margin-bottom: 0.25rem;">Enquiry Details Formatted & Ready to Send!</strong>
+                    <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5;">
+                      Your manpower enquiry for <strong class="success-client-name" style="color: var(--text-primary);">Client</strong> (<span class="success-service-name">Service</span>) has been formatted into an organized message. Please choose your preferred channel below to send it directly to our operations desk:
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Direct Action Buttons -->
+                <div style="display: flex; flex-direction: column; gap: 0.625rem; padding: 1rem; border-radius: 0.75rem; background-color: var(--bg-card); border: 1px solid rgba(16, 185, 129, 0.3); margin-bottom: 1rem;">
+                  <a id="action-whatsapp-send" href="#" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; background-color: #059669; color: #FFFFFF; font-weight: 700; font-size: 0.875rem; padding: 0.75rem 1.25rem; border-radius: 0.625rem; text-align: center;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    <span>Send via WhatsApp (Instant Reply)</span>
+                  </a>
+
+                  <a id="action-email-send" href="#" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; background-color: var(--bg-card-subtle); color: var(--text-primary); font-weight: 600; font-size: 0.875rem; padding: 0.75rem 1.25rem; border-radius: 0.625rem; border: 1px solid var(--border-subtle); text-align: center;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <span>Send via Email Application</span>
+                  </a>
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted);">
+                  <span>Enquiry formatted locally without third-party server exposure.</span>
+                  <button type="button" id="reset-form-btn" style="color: var(--amber-500); font-weight: 700; cursor: pointer;">Submit Another Requirement</button>
+                </div>
+              </div>
+
+              <!-- Error Notification Box -->
+              <div id="status-error-box" class="status-box status-box-error" role="alert">
+                <div style="display: flex; align-items: start; gap: 0.75rem;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 0.125rem;"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+                  <div>
+                    <strong style="font-size: 0.875rem; display: block; color: #DC2626; margin-bottom: 0.25rem;">Submission Notice</strong>
+                    <p class="error-msg-text" style="font-size: 0.8125rem; color: var(--text-secondary);">Please correct the errors in the form.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact Form -->
+              <form id="quote-form-el" novalidate>
+                <!-- Honeypot Spam Trap (Hidden from users) -->
+                <div style="display: none;" aria-hidden="true">
+                  <label for="website_hp">Leave this field blank</label>
+                  <input type="text" id="website_hp" name="website_hp" tabindex="-1" autocomplete="off">
+                </div>
+
+                <!-- Row 1: Name & Phone -->
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="fullName" class="form-label">Full Name <span class="req">*</span></label>
+                    <input type="text" id="fullName" name="fullName" class="form-control" placeholder="e.g. Ramesh Patel" required autocomplete="name">
+                    <p id="fullName-error" class="field-error-msg"></p>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone" class="form-label">Phone Number <span class="req">*</span></label>
+                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="e.g. 9876543210 or +91 98765 43210" required autocomplete="tel">
+                    <p id="phone-error" class="field-error-msg"></p>
+                  </div>
+                </div>
+
+                <!-- Row 2: Company & Email -->
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="company" class="form-label">Company / Factory Name (Optional)</label>
+                    <input type="text" id="company" name="company" class="form-control" placeholder="e.g. Gujarat Polymer Industries Ltd." autocomplete="organization">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email" class="form-label">Email Address (Optional)</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="e.g. planthead@company.com" autocomplete="email">
+                    <p id="email-error" class="field-error-msg"></p>
+                    <span class="form-hint">If provided, enquiry summary can be dispatched to your inbox.</span>
+                  </div>
+                </div>
+
+                <!-- Row 3: Service & Headcount -->
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="service" class="form-label">Required Service <span class="req">*</span></label>
+                    <select id="service" name="service" class="form-control" required>
+                      <option value="Contract Manpower Supply">Contract Manpower Supply</option>
+                      <option value="Skilled & Technical Staff">Skilled & Technical Staff</option>
+                      <option value="Industrial Housekeeping">Industrial Housekeeping</option>
+                      <option value="Compliance & Payroll">Compliance & Payroll</option>
+                      <option value="Payroll Outsourcing">Payroll Outsourcing</option>
+                      <option value="On-Site Supervision">On-Site Supervision</option>
+                      <option value="Other Requirements">Other Requirements</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="workforceSize" class="form-label">Estimated Headcount / Shifts (Optional)</label>
+                    <input type="text" id="workforceSize" name="workforceSize" class="form-control" placeholder="e.g. 20-25 workers, 2 rotating shifts">
+                  </div>
+                </div>
+
+                <!-- Requirement Details -->
+                <div class="form-group">
+                  <label for="requirementDetails" class="form-label">Requirement Details & Plant Location <span class="req">*</span></label>
+                  <textarea id="requirementDetails" name="requirementDetails" rows="4" class="form-control" placeholder="Please specify work nature, factory/warehouse location (e.g. Ankleshwar GIDC), expected start date, and special skills needed..." required></textarea>
+                  <p id="requirementDetails-error" class="field-error-msg"></p>
+                </div>
+
+                <!-- Submit Button -->
+                <div style="margin-top: 1.5rem;">
+                  <button type="submit" id="submit-btn" class="btn-form-submit">
+                    <span id="btn-spinner" class="animate-spin" style="display: none; width: 16px; height: 16px; border: 2px solid #0B1220; border-top-color: transparent; border-radius: 9999px;"></span>
+                    <span id="btn-text">Submit Manpower Quotation Request</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. MAP & PHYSICAL SITE NOTICE -->
+    <section class="section-py section-border-t bg-elevated">
+      <div class="container-max">
+        <div class="glass-card" style="padding: 1.75rem 2rem; display: flex; flex-direction: column; gap: 1.5rem;">
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="display: flex; align-items: start; gap: 1rem;">
+              <div class="competence-icon-box" style="margin-bottom: 0;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/>
+                </svg>
+              </div>
+              <div>
+                <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-primary);">Office Location & Plant Surveys</h3>
+                <p style="font-size: 0.8125rem; line-height: 1.6; color: var(--text-secondary); max-width: 44rem; margin-top: 0.25rem;">
+                  Located in the industrial heart of Ankleshwar GIDC. Plant heads and procurement managers are welcome to schedule an in-person meeting at our office or invite our operations team for an on-site facility assessment.
+                </p>
+                <p style="font-size: 0.75rem; font-weight: 600; color: var(--amber-500); margin-top: 0.5rem;">
+                  Shop No. FF-01, Dhanlaxmi Enterprise, Asian Paints Chowkdi, Plot No. 2603, 12&3, Ankleshwar GIDC, Ankleshwar, Gujarat 393002
+                </p>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; padding-top: 0.5rem;">
+              <a href="https://www.google.com/maps/search/?api=1&query=Shop%20No.%20FF-01%2C%20Dhanlaxmi%20Enterprise%2C%20Asian%20Paints%20Chowkdi%2C%20Plot%20No.%202603%2C%2012%263%2C%20Ankleshwar%20GIDC%2C%20Ankleshwar%2C%20Gujarat%20393002" target="_blank" rel="noopener noreferrer" class="btn-hero-primary" style="padding: 0.5rem 1rem; font-size: 0.75rem;">
+                <span>View on Google Maps</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" x2="17" y1="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+              <span style="display: inline-flex; align-items: center; gap: 0.375rem; padding: 0.5rem 0.875rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; color: var(--amber-500); background-color: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.2);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                <span>On-Site Plant Surveys Available</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" aria-label="Site Footer">
+    <div class="container-max footer-content">
+      <div class="footer-grid">
+        <!-- 1. Company Information -->
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <a href="index.html" class="navbar-brand" style="margin-bottom: 0.5rem;" aria-label="Mahadev Work Force Solution Homepage">
+            <div class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title" style="font-size: 1rem;">Mahadev Work Force Solution</span>
+              <span class="brand-subtitle">Industrial Manpower & Contracting</span>
+            </div>
+          </a>
+
+          <p style="font-size: 0.875rem; line-height: 1.6; max-width: 24rem; color: var(--text-secondary);">
+            Supplying dependable, verified, and safety-compliant workforce solutions to manufacturing plants, chemical units, logistics hubs, and infrastructure operations.
+          </p>
+
+          <div style="padding-top: 0.5rem; font-size: 0.75rem; border-top: 1px solid var(--border-subtle);">
+            <span style="display: inline-flex; align-items: center; gap: 0.375rem; font-weight: 600; color: #10B981;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+              <span>Statutory Compliance & Safety First Policy</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- 2. Quick Links -->
+        <div>
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="industries.html" class="footer-link">Industries</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Quote</a></li>
+          </ul>
+        </div>
+
+        <!-- 3. Workforce Services -->
+        <div>
+          <h3 class="footer-heading">Workforce Services</h3>
+          <ul class="footer-list">
+            <li><a href="services.html#contract-manpower" class="footer-link">Contract Manpower</a></li>
+            <li><a href="services.html#technical-staff" class="footer-link">Skilled & Technical</a></li>
+            <li><a href="services.html#housekeeping" class="footer-link">Industrial Housekeeping</a></li>
+            <li><a href="services.html#compliance" class="footer-link">Compliance & Payroll</a></li>
+            <li><a href="services.html#payroll" class="footer-link">Payroll Outsourcing</a></li>
+            <li><a href="services.html#supervision" class="footer-link">On-Site Supervision</a></li>
+          </ul>
+        </div>
+
+        <!-- 4. Contact Us -->
+        <div>
+          <h3 class="footer-heading">Contact Us</h3>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <a href="https://www.google.com/maps/search/?api=1&query=Shop%20No.%20FF-01%2C%20Dhanlaxmi%20Enterprise%2C%20Asian%20Paints%20Chowkdi%2C%20Plot%20No.%202603%2C%2012%263%2C%20Ankleshwar%20GIDC%2C%20Ankleshwar%2C%20Gujarat%20393002" target="_blank" rel="noopener noreferrer" class="footer-link" style="line-height: 1.5;">
+                Shop No. FF-01, Dhanlaxmi Enterprise, Asian Paints Chowkdi, Plot No. 2603, 12&3, Ankleshwar GIDC, Ankleshwar, Gujarat 393002
+              </a>
+            </li>
+
+            <li class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+                <a href="tel:+918160841776" class="footer-link">
+                  <strong>+91 816 084 1776</strong> <span style="font-size: 0.6875rem; color: var(--text-muted);">(Primary)</span>
+                </a>
+                <a href="tel:+919429126676" class="footer-link">
+                  <strong>+91 94291 26676</strong> <span style="font-size: 0.6875rem; color: var(--text-muted);">(Secondary)</span>
+                </a>
+              </div>
+            </li>
+
+            <li class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              <a href="mailto:mahadevworkforcesolution@gmail.com" class="footer-link" style="word-break: break-all;">
+                mahadevworkforcesolution@gmail.com
+              </a>
+            </li>
+
+            <li class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <span>Hours: <strong style="color: var(--text-primary);">9AM to 6PM</strong></span>
+            </li>
+
+            <li style="padding-top: 0.375rem;">
+              <a href="https://wa.me/918160841776?text=Hello%20Mahadev%20Work%20Force%20Solution%2C%20I%20would%20like%20to%20enquire%20about%20your%20industrial%20manpower%20services." target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.375rem 0.875rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; background-color: rgba(16, 185, 129, 0.1); color: #059669; border: 1px solid rgba(16, 185, 129, 0.25);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+                <span>Enquire on WhatsApp</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p>© <span id="current-year">2026</span> Mahadev Work Force Solution. All rights reserved.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+          <a href="services.html#compliance" class="footer-link">Statutory Compliance</a>
+          <a href="contact.html?service=Contract+Manpower+Supply#quote-form" class="footer-link" style="color: var(--amber-500); font-weight: 600;">Request Rate Card →</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <aside class="floating-whatsapp" aria-label="Quick Communication">
+    <a href="https://wa.me/918160841776?text=Hello%20Mahadev%20Work%20Force%20Solution%2C%20I%20would%20like%20to%20enquire%20about%20your%20industrial%20manpower%20services." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Enquire on WhatsApp (opens in a new tab)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+      <span class="whatsapp-tooltip">Enquire on WhatsApp</span>
+    </a>
+  </aside>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
