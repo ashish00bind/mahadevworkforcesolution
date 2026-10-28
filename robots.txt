@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ashish00bind.github.io/mahadevworkforcesolution/sitemap.xml
